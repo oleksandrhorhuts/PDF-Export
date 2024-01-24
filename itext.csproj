@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{624682D1-65F2-40DA-AC95-6901A5642ED1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>itext</RootNamespace>
+    <AssemblyName>itext</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.PDF, Version=24.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>packages\Aspose.PDF.24.1.0\lib\net4.0\Aspose.PDF.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.Imaging.Annotation">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.Imaging.Annotation.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.Imaging.Basic">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.Imaging.Basic.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.Imaging.Basic.Codec">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.Imaging.Basic.Codec.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.Imaging.DICOM">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.Imaging.DICOM.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.Imaging.Drawing">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.Imaging.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.Imaging.JBIG2">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.Imaging.JBIG2.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.Imaging.JPEG2000">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.Imaging.JPEG2000.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.Imaging.Processing">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.Imaging.Processing.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.Imaging.SVG">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.Imaging.SVG.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.Imaging.XPS">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.Imaging.XPS.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.WDP">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.WDP.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.XDoc.Converter">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.XDoc.Converter.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.XDoc.Excel">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.XDoc.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.XDoc.HTML5Viewer">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.XDoc.HTML5Viewer.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.XDoc.Office.Inner.Common">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.XDoc.Office.Inner.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.XDoc.Office.Inner.Office03">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.XDoc.Office.Inner.Office03.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.XDoc.PDF">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.XDoc.PDF.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.XDoc.PDF.HTML5Editor">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.XDoc.PDF.HTML5Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.XDoc.PowerPoint">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.XDoc.PowerPoint.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.XDoc.TIFF">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.XDoc.TIFF.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.XDoc.Word">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.XDoc.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.XImage.BarcodeCreator">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.XImage.BarcodeCreator.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.XImage.BarcodeScanner">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.XImage.BarcodeScanner.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.XImage.OCR">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.XImage.OCR.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.XImage.Raster">
+      <HintPath>C:\Users\Admin\Downloads\RasterEdge.DocImageSDK12.0.2(release)\Bin\NetStandard2.0\RasterEdge.XImage.Raster.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Base, Version=24.1460.47.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Compression.Base.24.1.47\lib\net46\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=24.1460.47.0, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Licensing.24.1.47\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Base, Version=24.1460.47.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Pdf.WinForms.24.1.47\lib\net46\Syncfusion.Pdf.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Drawing.Common.8.0.1\lib\net462\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
